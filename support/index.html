@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="幸運水晶（Lucky Crystal）技術支援與常見問題：恢復購買、指南針校正、小工具、退款。Support and FAQ.">
+<title>幸運水晶 技術支援 · Support</title>
+<!-- 联系邮箱与 App 里 LegalText.contactEmail 一致（hankousa@icloud.com）。功能说明以 2026-11-12 的工程为准，以后功能、价格方式变了要跟着改。不支持家人共享（老板 2026-11-12 定）。 -->
+<style>
+  :root {
+    --bg: #f6f5fa;
+    --card: #ffffff;
+    --text: #1f1c26;
+    --muted: #6a6577;
+    --line: #e4e0ee;
+    --accent: #6d4fd0;
+    --gold: #9a6f22;
+    --chip: #f0ecfa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0d14;
+      --card: #19161f;
+      --text: #ece9f3;
+      --muted: #a29cae;
+      --line: #2d2838;
+      --accent: #b9a3ff;
+      --gold: #e1b45e;
+      --chip: #241f2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang TC", "PingFang HK", "PingFang SC",
+          "Noto Sans TC", "Noto Sans SC", "Microsoft JhengHei", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  }
+  :lang(en) { line-height: 1.65; }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left));
+  }
+  header { text-align: center; margin-bottom: 8px; }
+  .app { margin: 0; color: var(--gold); font-weight: 600; letter-spacing: .04em; font-size: .95rem; }
+  h1 { margin: 6px 0 16px; font-size: 1.55rem; line-height: 1.35; }
+  .langs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .langs a {
+    display: inline-block; padding: 7px 16px; border-radius: 999px;
+    background: var(--chip); border: 1px solid var(--line);
+    color: var(--text); text-decoration: none; font-size: .95rem;
+  }
+  .langs a:hover, .langs a:focus-visible { border-color: var(--accent); color: var(--accent); }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 22px 20px 18px; margin: 22px 0; scroll-margin-top: 16px;
+  }
+  h2 { margin: 0 0 6px; font-size: 1.3rem; }
+  h3 { margin: 1.5em 0 .5em; font-size: 1.05rem; color: var(--gold); }
+  p { margin: .45em 0; }
+  ul, ol { margin: .4em 0; padding-left: 1.3em; }
+  li { margin: .3em 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .facts { margin: .8em 0 0; padding: 12px 14px; background: var(--chip); border-radius: 12px; font-size: .95rem; }
+  .facts p { margin: .2em 0; }
+  details { border-top: 1px solid var(--line); }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary {
+    cursor: pointer; list-style: none; padding: 13px 28px 13px 0; position: relative;
+    font-weight: 600; line-height: 1.5;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 4px; top: 11px;
+    color: var(--accent); font-weight: 400; font-size: 1.25rem;
+  }
+  details[open] summary::after { content: "−"; }
+  .answer { padding: 0 0 14px; }
+  .top { margin-top: 1.2em; font-size: .9rem; }
+  .top a { text-decoration: none; }
+  .note { color: var(--muted); font-size: .9rem; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+
+<header>
+  <p class="app">幸運水晶 · Lucky Crystal · 幸运水晶</p>
+  <h1>技術支援 · Support · 技术支持</h1>
+  <nav class="langs" aria-label="Language">
+    <a href="#zh-hant" hreflang="zh-Hant">繁體中文</a>
+    <a href="#en" hreflang="en">English</a>
+    <a href="#zh-hans" hreflang="zh-Hans">简体中文</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===================== 繁體中文 ===================== -->
+<section id="zh-hant" lang="zh-Hant">
+  <h2>技術支援</h2>
+  <p>幸運水晶是一款 iPhone 上的 3D 水晶收藏與原石工坊 App，附有今日吉方位指南針和主畫面小工具。不需要註冊帳號，也不蒐集任何個人資料（見<a href="../privacy/#zh-hant">隱私權政策</a>）。</p>
+  <div class="facts">
+    <p><strong>系統需求：</strong>iPhone，iOS 17 或以上版本。</p>
+    <p><strong>聯絡我們：</strong><a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a></p>
+  </div>
+
+  <h3>常見問題</h3>
+
+  <details>
+    <summary>怎麼恢復購買？</summary>
+    <div class="answer">
+      <p>換手機、重新安裝，或在另一台 iPhone 上使用時，先用購買時的 Apple 帳號登入 App Store，再到 App 裡點「恢復購買」。不需要註冊本 App 的帳號。</p>
+      <p>「恢復購買」在這些地方都有：「商店」頁上方和最下方、「我的」頁的「購買」區，以及每個解鎖視窗。系統可能會要求你輸入 Apple 帳號密碼。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>可以和家人共享嗎？</summary>
+    <div class="answer">
+      <p>目前不支援家人共享：購買的商品屬於購買時使用的 Apple ID。同一個 Apple ID 的 iPhone 都可以點「恢復購買」找回。</p>
+      <p>如果家長設定了孩子購買前要先經過同意，商品會先顯示「等待核准」，家長同意後就會自動解鎖。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>指南針不準怎麼辦？怎麼校準？</summary>
+    <div class="answer">
+      <p>手機指南針容易受磁鐵、喇叭、金屬桌面、磁吸手機殼或支架干擾。指南針頁會顯示「精確度 ±N°」：</p>
+      <ul>
+        <li>誤差太大（大約超過 ±25°）時，畫面會提示校準：手持手機，在空中慢慢畫幾次「8」字，直到提示消失。</li>
+        <li>附近有強磁場時，畫面會提醒你遠離後再看。</li>
+        <li>每個方位佔 45°，對準方位中心 ±4° 以內，會顯示「已對準」。</li>
+      </ul>
+      <p>本 App 不適合用於導航、登山、航海等需要精確方向的場合。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>磁北和真北有什麼不同？要不要開定位？</summary>
+    <div class="answer">
+      <p>App 預設使用<strong>磁北</strong>，不需要定位權限。磁北和地理上的真北之間有一個夾角，叫磁偏角。依世界地磁模型 WMM2025 推算（2026 年底）：台北約西偏 5.1°、香港約西偏 3.3°，相對每個方位 45° 的範圍影響很小；北美比較大，例如紐約約西偏 12.5°、西雅圖約東偏 14.9°，建議切換到真北。</p>
+      <p>在指南針頁切換到<strong>真北</strong>時，App 會請求「使用 App 期間」的定位，由系統在手機上換算磁偏角。我們不儲存、不上傳你的位置；切回磁北就會停止定位。拒絕定位也能正常使用，會繼續按磁北顯示。之後可以在 iPhone 的「設定」→「隱私權與安全性」→「定位服務」裡修改。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎麼加入主畫面小工具？</summary>
+    <div class="answer">
+      <ol>
+        <li>長按主畫面空白處，直到圖示開始晃動。</li>
+        <li>點左上角的「+」（iOS 18 以後是點「編輯」→「加入小工具」）。</li>
+        <li>找到「幸運水晶」，選擇小或中尺寸，點「加入小工具」。</li>
+        <li>長按小工具 →「編輯小工具」，可以選水晶（App 裡設定的那件、我的作品，或 任一顆展示水晶）和吉神。</li>
+      </ol>
+      <p>想放自己做的作品：在 App 的「我的」頁點一件作品，設為小工具。小工具每天 0 點會自動換成當天的方位。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>付費項目會解鎖什麼？</summary>
+    <div class="answer">
+      <p><strong>免費：</strong>指南針、小工具、每顆水晶的「基礎」檔（石頭本身的顏色和包裹體）、白水晶塔全特效、白水晶原石，以及照片雷射以外的全部工坊工具。</p>
+      <p><strong>可另外購買：</strong></p>
+      <ul>
+        <li>光效（每顆水晶各自購買）：色散火彩、星芒、閃光星點與「能量」模式。</li>
+        <li>原石：在原石工坊鋸切、研磨、拋光。單件檔做 1 件；多件檔做 3 件，其中 2 件是同源料。</li>
+        <li>底座：紅木底座、黃銅托架、發光底座，展示水晶和作品都能用。</li>
+        <li>照片雷射雕刻：選一張照片，自動取出主體，雕刻在石頭表面。</li>
+        <li>金色寓意三石包：黃水晶、金髮晶、綠幽靈三塊原石。</li>
+        <li>全收藏：現有的全部原石、底座、光效和照片雷射；以後上新的商品另外販售。</li>
+      </ul>
+      <p>全部是一次購買、永久擁有的數位內容；沒有訂閱、沒有抽獎、沒有虛擬幣。商品只改變 App 內的外觀與可用的原石，不具有任何超自然、醫療或保健效果。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎麼申請退款？</summary>
+    <div class="answer">
+      <p>購買由 Apple 處理，我們無法直接退款，也看不到你的付款資訊。請到 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> 用你的 Apple 帳號登入後申請，具體規則以 Apple 及你所在地的法律為準。退款完成後，該商品會在 App 裡重新上鎖。</p>
+      <p>在台灣的 App Store 購買時，App 會在第一次購買前請你確認：商品是非以有形媒介提供的數位內容，購買後立即提供，經你事先同意後不適用七日解除權；退款仍可依 Apple 規定向 Apple 申請。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎麼聯絡你們？</summary>
+    <div class="answer">
+      <p>請寄信到 <a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a>。來信時附上這些資訊，會比較快找到問題：iPhone 型號、iOS 版本、App 版本（在「我的」頁的「關於」→「版本」），以及問題畫面的截圖或螢幕錄影。</p>
+    </div>
+  </details>
+
+  <p class="note">「今日吉方位」與水晶寓意為傳統文化與娛樂參考，不預測吉凶，不具醫療或保健功效，不構成任何建議。</p>
+  <p class="top"><a href="#top">↑ 回到頂部</a></p>
+</section>
+
+<!-- ===================== English ===================== -->
+<section id="en" lang="en">
+  <h2>Support</h2>
+  <p>Lucky Crystal is an iPhone app for collecting 3D crystals and shaping rough stones in a virtual workshop, with a today's-direction compass and a Home Screen widget. It needs no account and collects no personal data (see the <a href="../privacy/#en">Privacy Policy</a>).</p>
+  <div class="facts">
+    <p><strong>Requirements:</strong> iPhone with iOS 17 or later.</p>
+    <p><strong>Contact:</strong> <a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a></p>
+  </div>
+
+  <h3>Frequently asked questions</h3>
+
+  <details>
+    <summary>How do I restore my purchases?</summary>
+    <div class="answer">
+      <p>On a new phone, after reinstalling, or on another iPhone, sign in to the App Store with the Apple Account you used to buy, then tap Restore purchases in the app. You don't need an account with us.</p>
+      <p>Restore purchases is at the top and bottom of the Store tab, in the Purchases section of the Me tab, and in every unlock sheet. Your iPhone may ask for your Apple Account password.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Can I share purchases with my family?</summary>
+    <div class="answer">
+      <p>Not at the moment. Purchases belong to the Apple ID used to buy them. Any iPhone signed in with that Apple ID can get them back with Restore purchases.</p>
+      <p>If a parent uses Ask to Buy, the item shows “Awaiting approval” and unlocks automatically once the parent approves it.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>The compass seems wrong. How do I calibrate it?</summary>
+    <div class="answer">
+      <p>Phone compasses are easily disturbed by magnets, speakers, metal desks and magnetic cases or mounts. The Compass tab shows “Accuracy ±N°”:</p>
+      <ul>
+        <li>When the error is large (above about ±25°), the app asks you to calibrate: hold your phone and slowly draw a figure 8 in the air a few times until the message goes away.</li>
+        <li>If there is a strong magnetic field nearby, the app tells you to move away from it.</li>
+        <li>Each direction covers 45°. Within ±4° of the centre of a direction, the app shows “Aligned”.</li>
+      </ul>
+      <p>Please don't use this app for navigation, hiking, sailing or anything else that needs an exact bearing.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is the difference between magnetic north and true north? Do I need Location?</summary>
+    <div class="answer">
+      <p>The app uses <strong>magnetic north</strong> by default, which needs no location permission. The angle between magnetic north and true (geographic) north is called magnetic declination. Based on the World Magnetic Model WMM2025 for late 2026, it is about 5.1° west in Taipei and 3.3° west in Hong Kong, which is small compared with the 45° each direction covers. It is larger in North America, for example about 12.5° west in New York and 14.9° east in Seattle, so we suggest switching to true north there.</p>
+      <p>When you switch the compass to <strong>True north</strong>, the app asks for location access "While Using the App" so the system can calculate the declination on your phone. We do not store or upload your location, and switching back to magnetic north stops location updates. If you decline, the app keeps working with magnetic north. You can change this later in Settings &gt; Privacy &amp; Security &gt; Location Services.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I add the widget to my Home Screen?</summary>
+    <div class="answer">
+      <ol>
+        <li>Touch and hold an empty area of the Home Screen until the apps jiggle.</li>
+        <li>Tap the + button in the top-left corner (on iOS 18 and later, tap Edit, then Add Widget).</li>
+        <li>Find Lucky Crystal, choose the small or medium size and tap Add Widget.</li>
+        <li>Touch and hold the widget, tap Edit Widget, and choose a crystal (the one set in the app, one of your pieces, or any Showcase crystal) and a deity.</li>
+      </ol>
+      <p>To show a piece you made, open the Me tab, tap the piece and set it as the widget. The widget moves to the new day's direction at midnight.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What do the paid items unlock?</summary>
+    <div class="answer">
+      <p><strong>Free:</strong> the compass, widgets, the basic mode of every crystal (the stone's own colour and inclusions), full effects for the clear quartz tower, the clear quartz rough, and every workshop tool except photo laser engraving.</p>
+      <p><strong>Optional purchases:</strong></p>
+      <ul>
+        <li>Light effects (bought per crystal): dispersion fire, star glints, sparkles and Energy mode.</li>
+        <li>Rough stones to saw, grind and polish in the workshop. A 1-piece rough makes one piece; a 3-piece rough makes three, two of them sister pieces.</li>
+        <li>Stands: rosewood stand, brass cradle and light-up stand, for Showcase crystals and your own pieces.</li>
+        <li>Photo laser engraving: pick a photo, the subject is cut out automatically and engraved on the stone's surface.</li>
+        <li>Golden Trio Roughs: citrine, rutilated quartz and green phantom roughs.</li>
+        <li>Complete Collection: every rough, stand, light effect and photo laser engraving available now. Items added later are sold separately.</li>
+      </ul>
+      <p>Everything is digital content you buy once and keep. There are no subscriptions, no random items and no virtual currency. Items only change what you see and which stones you can use in the app; they have no supernatural, medical or health effect.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I request a refund?</summary>
+    <div class="answer">
+      <p>Purchases are handled by Apple, so we can't issue refunds ourselves and we never see your payment details. Please go to <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple Account and make a request. Apple's rules and the law where you live apply. After a refund, the item is locked again in the app.</p>
+      <p>On the Taiwan App Store, the app asks you to confirm before your first purchase that the items are digital content delivered immediately and, with your prior consent, are not covered by the 7-day cancellation right. You can still request a refund from Apple under Apple's rules.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I contact you?</summary>
+    <div class="answer">
+      <p>Email <a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a>. It helps if you include your iPhone model, iOS version, the app version (Me tab &gt; About &gt; Version) and a screenshot or screen recording of the problem.</p>
+    </div>
+  </details>
+
+  <p class="note">Today's direction and the crystal meanings are traditional culture, offered for cultural interest and entertainment only. They do not predict anything, have no medical or health effect and are not advice.</p>
+  <p class="top"><a href="#top">↑ Back to top</a></p>
+</section>
+
+<!-- ===================== 简体中文 ===================== -->
+<section id="zh-hans" lang="zh-Hans">
+  <h2>技术支持</h2>
+  <p>幸运水晶是一款 iPhone 上的 3D 水晶收藏与原石工坊 App，带今日吉方位指南针和桌面小组件。不需要注册账号，也不收集任何个人信息（见<a href="../privacy/#zh-hans">隐私政策</a>）。</p>
+  <div class="facts">
+    <p><strong>系统要求：</strong>iPhone，iOS 17 或更高版本。</p>
+    <p><strong>联系我们：</strong><a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a></p>
+  </div>
+
+  <h3>常见问题</h3>
+
+  <details>
+    <summary>怎么恢复购买？</summary>
+    <div class="answer">
+      <p>换手机、重新安装，或在另一台 iPhone 上使用时，先用购买时的 Apple 账户登录 App Store，再到 App 里点“恢复购买”。不需要注册本 App 的账号。</p>
+      <p>“恢复购买”在这些地方都有：“商店”页顶部和最下面、“我的”页的“购买”区，以及每个解锁窗口。系统可能会要求输入 Apple 账户密码。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>可以和家人共享吗？</summary>
+    <div class="answer">
+      <p>目前不支持家人共享：购买的商品属于购买时使用的 Apple ID。同一个 Apple ID 的 iPhone 都可以点“恢复购买”找回。</p>
+      <p>如果家长设置了孩子购买前要先经过同意，商品会先显示“等待批准”，家长同意后自动解锁。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>指南针不准怎么办？怎么校准？</summary>
+    <div class="answer">
+      <p>手机指南针容易受磁铁、音箱、金属桌面、磁吸手机壳或支架干扰。指南针页会显示“精度 ±N°”：</p>
+      <ul>
+        <li>误差太大（大约超过 ±25°）时，会提示校准：手持手机，在空中慢慢画几次“8”字，直到提示消失。</li>
+        <li>附近有强磁场时，会提醒你远离后再看。</li>
+        <li>每个方位占 45°，对准方位中心 ±4° 以内会显示“已对准”。</li>
+      </ul>
+      <p>本 App 不适合用于导航、登山、航海等需要精确方位的场合。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>磁北和真北有什么不同？要不要开定位？</summary>
+    <div class="answer">
+      <p>App 默认用<strong>磁北</strong>，不需要定位权限。磁北和地理真北之间有一个夹角，叫磁偏角。按世界地磁模型 WMM2025 推算（2026 年底）：台北约西偏 5.1°、香港约西偏 3.3°，相对每个方位 45° 的范围影响很小；北美比较大，例如纽约约西偏 12.5°、西雅图约东偏 14.9°，建议切到真北。</p>
+      <p>在指南针页切到<strong>真北</strong>时，App 会请求“使用 App 期间”的定位，由系统在手机上换算磁偏角。我们不保存、不上传你的位置；切回磁北就停止定位。拒绝定位也能正常使用，会继续按磁北显示。之后可以在 iPhone 的“设置”→“隐私与安全性”→“定位服务”里修改。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎么添加桌面小组件？</summary>
+    <div class="answer">
+      <ol>
+        <li>长按主屏幕空白处，直到图标开始晃动。</li>
+        <li>点左上角的“+”（iOS 18 以后是点“编辑”→“添加小组件”）。</li>
+        <li>找到“幸运水晶”，选小号或中号，点“添加小组件”。</li>
+        <li>长按小组件 →“编辑小组件”，可以选水晶（App 里设的那件、我的作品，或 任一颗展示水晶）和吉神。</li>
+      </ol>
+      <p>想放自己做的作品：在 App 的“我的”页点一件作品，设为小组件。小组件每天 0 点自动换成当天的方位。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>付费项目会解锁什么？</summary>
+    <div class="answer">
+      <p><strong>免费：</strong>指南针、小组件、每颗水晶的“基础”档（石头本身的颜色和包裹体）、白水晶塔全特效、白水晶原石，以及照片激光以外的全部工坊工具。</p>
+      <p><strong>可另外购买：</strong></p>
+      <ul>
+        <li>光效（每颗水晶单独购买）：色散火彩、星芒、闪光星点和“能量”模式。</li>
+        <li>原石：在原石工坊锯切、研磨、抛光。单件档做 1 件；多件档做 3 件，其中 2 件是同源料。</li>
+        <li>底座：红木底座、黄铜托架、发光底座，展示水晶和作品都能用。</li>
+        <li>照片激光雕刻：选一张照片，自动抠出主体，雕刻在石头表面。</li>
+        <li>金色寓意三石包：黄水晶、金发晶、绿幽灵三块原石。</li>
+        <li>全收藏：现有的全部原石、底座、光效和照片激光；以后上新的商品另售。</li>
+      </ul>
+      <p>全部是一次购买、永久拥有的数字内容；没有订阅、没有抽奖、没有虚拟币。商品只改变 App 内的外观与可用原石，不具有任何超自然、医疗或保健效果。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎么申请退款？</summary>
+    <div class="answer">
+      <p>购买由 Apple 处理，我们无法直接退款，也看不到你的付款信息。请到 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> 用你的 Apple 账户登录后申请，具体规则以 Apple 及你所在地法律为准。退款完成后，该商品会在 App 里重新上锁。</p>
+      <p>在台湾 App Store 购买时，App 会在第一次购买前请你确认：商品是非以有形媒介提供的数字内容，购买后立即提供，经你事先同意后不适用七日解除权；退款仍可按 Apple 规定向 Apple 申请。</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>怎么联系你们？</summary>
+    <div class="answer">
+      <p>请发邮件到 <a href="mailto:hankousa@icloud.com">hankousa@icloud.com</a>。来信时附上这些信息会更快找到问题：iPhone 型号、iOS 版本、App 版本（“我的”页“关于”→“版本”），以及问题画面的截图或录屏。</p>
+    </div>
+  </details>
+
+  <p class="note">本 App 的方位、水晶寓意均为传统文化与娱乐参考，不预测吉凶，不具有医疗或保健功效，不构成任何建议。</p>
+  <p class="top"><a href="#top">↑ 回到顶部</a></p>
+</section>
+
+</main>
+
+<footer>
+  <p>幸運水晶 · Lucky Crystal · 幸运水晶<br>
+  © 2026 Lucky Crystal</p>
+  <p><a href="../privacy/">隱私權政策 · Privacy Policy · 隐私政策</a></p>
+</footer>
+
+</div>
+</body>
+</html>
